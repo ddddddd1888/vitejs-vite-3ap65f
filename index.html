@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <script src="https://unpkg.com/@studio-freight/lenis@1.0.38/dist/lenis.min.js"></script> 
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>pinnacle</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="./src/style.css">
+      <link rel="stylesheet" href="./src/util.css">
+      <link rel="stylesheet" href="./src/header.css">
+      <link rel="stylesheet" href="./src/hero.css">
+      <script src="script.js" type="module" defer></script>
+      <script src="circlecursor.js" type="module"></script>
+  </head>
+  <body>
+    <div class="circle"></div>
+      <header class="header" role="banner">
+        <div>
+          <a class="logo" href="#">
+          <img src="../images/logo.webp" class="logo__img" alt="Pinnacle Logo">
+          <div class="logo__text">
+            <h1 id="text">PINNACLE</h1>
+            <img src="./images/sataandagi.webp" id="sataandagi">
+          </div>
+        </a>
+        </div>
+        <nav aria-label="Main Navigation" role="navigation">
+            <ul class="nav__menu" role="menu">
+                <li class="header__link">
+                <img src="../images/dot.png" class="header__dot" alt="dot icon">  
+                <a href="#">Services</a></li>
+                <li class="header__link">
+                  <img src="../images/dot.png" class="header__dot" id="dot-projects" alt="dot icon">
+                  <a class="inactive" id="projects" href="#">
+                  Projects</a>
+                  <a href="about" id="projects-active">Projects</a>
+                </li>
+                <li class="header__link">
+                  <img src="../images/dot.png" class="header__dot" id="dot-about" alt="dot icon">
+                  <a class="inactive" id="about" href="#">About</a>
+                  <a href="about" id="about-active">About</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="btn__header w-inline-block">
+        <img src="./images/arrow.svg" id="btn-arrow"> 
+        <div id="btn-text">Let's Chat</div>
+        <div id="btn-dot"></div>
+        </a>
+      </header>
+      <main role="main">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, dolores, dolorum iusto dolorum vero alias quia, laborum temporibus itaque incidunt sequi. Ut laoreet feugiat lorem.</p>
+      </main>
+  </body>
+</html>
