@@ -1,11 +1,4 @@
-import { gsap } from 'gsap';
-import { CustomEase } from "gsap/dist/CustomEase";
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger.js';
-import Lenis from '@studio-freight/lenis';
-
-gsap.registerPlugin(ScrollTrigger, CustomEase);
-
-gsap.from('.header', { duration:1, y:'-100%' })
+gsap.from('.header', { duration:1, y:'-200%', ease:"back.inOut" })
 
 
 // dot animation for nav bar
@@ -17,7 +10,7 @@ gsap.set("#dot-projects", {opacity: 0});
 
 let animation = gsap.fromTo("#dot-about", 
   { opacity: 0, scale: 0.01 }, 
-  { opacity: 1, scale: 0.9, ease:"expo.inOut", duration: .6, paused: true }
+  { opacity: 1, scale:0.9, ease:"expo.inOut", duration: .6, paused: true }
 );
 
 let poop = gsap.fromTo("#dot-projects", 
@@ -32,35 +25,18 @@ projects.addEventListener("mouseleave", () => poop.reverse());
 about.addEventListener("mouseenter", () => animation.play());
 about.addEventListener("mouseleave", () => animation.reverse());
 
-// logo animation normal text
-let logo = document.querySelector('.logo');
-
-let logoanimation = gsap.to("#text", 
-{ y:'-21px', ease:"expo.inOut", duration:.4, paused:true });
-
-logo.addEventListener("mouseenter", () => logoanimation.play());
-logo.addEventListener("mouseleave", () => logoanimation.reverse());
-
-// logo animation sataandagi
-
-let sataandagi = gsap.to("#sataandagi", 
-{ y:'-31px', ease:"expo.inOut", duration:.4, paused:true });
-
-logo.addEventListener("mouseenter", () => sataandagi.play());
-logo.addEventListener("mouseleave", () => sataandagi.reverse());
-
 //nav bar project hover effect
 
 let projectsinactive = document.querySelector('#projects');
 
 let projectsinactiveanimation = gsap.to("#projects", 
-{ y:'-21px', ease:"expo.inOut", duration:.4, paused:true });
+{ y:'-20px', ease:"expo.inOut", duration:.5, paused:true });
 
 projectsinactive.addEventListener("mouseenter", () => projectsinactiveanimation.play());
 projectsinactive.addEventListener("mouseleave", () => projectsinactiveanimation.reverse());
 
 let projectsactiveanimation = gsap.to("#projects-active", 
-{ y:'-16px', ease:"expo.inOut", duration:.4, paused:true });
+{ y:'-36px', ease:"expo.inOut", duration:.5, paused:true });
 
 projectsinactive.addEventListener("mouseenter", () => projectsactiveanimation.play());
 projectsinactive.addEventListener("mouseleave", () => projectsactiveanimation.reverse());

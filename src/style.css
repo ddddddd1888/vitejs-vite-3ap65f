@@ -5,6 +5,7 @@
   box-sizing: border-box;
   text-underline-position: under;
   outline: none;
+  margin: 0;
 }
 
 a {
@@ -59,14 +60,21 @@ img {
 @font-face {
   font-family: NoiGroteskMedium;
   font-weight: 500;
-  src: url("../NoiGrotesk-Medium.otf") format("opentype");
+  src: url("../public/NoiGrotesk-Medium.otf") format("opentype");
 }
 
 @font-face {
   font-family: NoiGroteskRegular;
   font-weight: 400;
-  src: url("../NoiGrotesk-Regular.otf") format("opentype");
+  src: url("../public/NoiGrotesk-Regular.otf") format("opentype");
 }
+
+@font-face {
+  font-family: NoiGroteskLight;
+  font-weight: 300;
+  src: url("../public/NoiGroteskTrial-Light.otf") format("opentype");
+}
+
 button {
   display: inline-block;
   padding: 0;

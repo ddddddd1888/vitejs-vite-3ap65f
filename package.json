@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "start": "serve",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -11,7 +12,9 @@
     "vite": "^5.1.4"
   },
   "dependencies": {
+    "@splinetool/runtime": "^1.0.54",
     "@studio-freight/lenis": "^1.0.37",
-    "gsap": "^3.12.5"
+    "gsap": "^3.12.5",
+    "serve": "^14.2.1"
   }
 }

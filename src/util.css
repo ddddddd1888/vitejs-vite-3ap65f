@@ -10,7 +10,7 @@
 
 .circle {
   z-index: 999999;
-  --circle-size:100px;
+  --circle-size:20px;
   position: fixed;
   height: var(--circle-size);
   width: var(--circle-size);
@@ -19,4 +19,7 @@
   top: calc(var(--circle-size) / 2 * -1);
   left: calc(var(--circle-size) / 2 * -1);
   pointer-events: none;
+  background-color: white;
+  opacity: 1;
+  mix-blend-mode: difference;
 }
